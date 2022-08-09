@@ -9,7 +9,7 @@ app.use(cors())
 
 const io = new Server(serve, {
     cors: {
-        origin: 'http://localhost:3000',
+        origin: 'https://simple-chat-app-with-node-socket-io.vercel.app/',
         method: ["GET", "POST"]
     }
 })
