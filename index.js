@@ -11,8 +11,7 @@ const io = new Server(serve, {
     cors: {
         origin: '*',
         method: ["GET", "POST"],
-        allowedHeaders: ["my-custom-header"],
-        credentials: true
+        // credentials: true
     }
 })
 
