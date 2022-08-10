@@ -11,8 +11,10 @@ const io = new Server(serve, {
     cors: {
         origin: '*',
         method: ["GET", "POST"],
-        // credentials: true
-    }
+        transports: ['websocket', 'polling'],
+        credentials: true
+    },
+    allowEIO3: true
 })
 
 io.on("connection", (socket) => {
